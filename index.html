@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenStreetMap with Weather</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="assets/css/style.css"> </head>
+<body>
+
+    <div class="container-1">
+        <h2>Live Weather</h2>
+    </div>
+    <div id="search-container">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" id="location-input" placeholder="Enter location....">
+        <button id="search-button">Search</button>
+    </div>
+
+    <div>
+        <div id="map"></div>
+    </div>
+
+    <div id="weather-info">
+        <h3>Weather Information</h3>
+        
+    </div>
+
+   
+<div class="box-container">
+    <div class="row">
+      <div class="box"><p><strong>Temperature:</strong> <span id="temperature"></span></p></div>
+      <div class="box">   <p><strong>Humidity:</strong> <span id="humidity"></span></p></div>
+    </div>
+    <div class="row">
+      <div class="box"> <p><strong>Sunrise:</strong> <span id="sunrise"></span></p></div>
+      <div class="box"> <p><strong>Sunset:</strong> <span id="sunset"></span></p></div>
+    </div>
+    <div class="row">
+        <div class="box"> <p><strong>Wind Speed:</strong> <span id="wind-speed"></span></p></div>
+        <div class="box"><p><strong>Pressure:</strong> <span id="pressure"></span></p></div>
+      </div>
+  </div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
